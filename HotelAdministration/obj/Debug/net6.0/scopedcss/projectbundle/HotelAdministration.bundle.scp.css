@@ -1,0 +1,28 @@
+/* _content/HotelAdministration/Views/Shared/_Layout.cshtml.rz.scp.css */
+a.navbar-brand[b-pzdcnewmjf] {
+    white-space: normal;
+    margin-left: 0px;
+    line-height: 7px;
+    color: white;
+}
+
+a[b-pzdcnewmjf] {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-pills .nav-link.active[b-pzdcnewmjf], .nav-pills .show > .nav-link[b-pzdcnewmjf] {
+    color: white;
+}
+
+.border-top[b-pzdcnewmjf] {
+    border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-pzdcnewmjf] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-pzdcnewmjf] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+

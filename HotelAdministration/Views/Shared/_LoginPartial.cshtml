@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using HotelAdministration.Areas.Identity.Data
+
+@inject SignInManager<HotelAdministrationUser> SignInManager
+@inject UserManager<HotelAdministrationUser> UserManager
+
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a class="username" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@UserManager.GetUserName(User)</a> 
+            <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button id="logout" type="submit" class="logout">Logout</button>
+            </form>
+    </li>
+}
+</ul>

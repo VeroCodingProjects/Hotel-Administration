@@ -1,0 +1,32 @@
+﻿@{
+    // @{} -> entering C# code within the Razor markup -> Razor is a markup syntax used for creating dynamic web pages in ASP.NET.
+    Layout = "/Views/Shared/_Layout.cshtml"; // this is the template that I wanna use
+}
+
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div>
+            <div class="card login-logout-card">
+                <ul classs="nav nav-tas card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Login">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/Identity/Account/Register">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div>
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+@section Scripts {
+    @await RenderSectionAsync("Scripts", required: false)
+}
